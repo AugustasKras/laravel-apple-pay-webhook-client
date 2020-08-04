@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// TODO: move to separate routes file (payments.php)
+Route::webhooks('/payments/apple-pay', 'ApplePay');
